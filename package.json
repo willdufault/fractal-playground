@@ -12,6 +12,6 @@
   "author": "will dufault",
   "license": "ISC",
   "dependencies": {
-    "dedent-js": "^1.0.1"
+    "express": "^4.18.2"
   }
 }
