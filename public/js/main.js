@@ -325,7 +325,7 @@ function generateBlackCircle() {
 }
 
 function showInstructions() {
-	alert('INSTRUCTIONS:\n\nfractals are calculated by converting the x- and y-coordinates of each pixel on the screen to a complex number, then checking to see if that complex number diverges for a given function. each input on the left modifies the function, z = z^2 + c, where z and c are complex numbers, to change the look of the resulting fractal. see the "Plotting algorithms for the Mandelbrot set" Wikipedia page for more information.\n\nminimum/maximum real: the range of x-values\n\nminimum/maximum imaginary: the range of y-values\n\n# of iterations: how detailed the fractal is\n\nz real/imaginary: changes the starting values of z\n\nflip c and z: flips the values of c and z\n\nplot diverging: plots all values of c that diverge instead of converge');
+	alert('INSTRUCTIONS:\n\nfractals are calculated by converting the x- and y-coordinates of each pixel on the screen to a complex number, then checking to see if that complex number diverges for a given function. each input on the left modifies the function, z = z^2 + c, where z and c are complex numbers, to change the look of the resulting fractal. see the "Plotting algorithms for the Mandelbrot set" Wikipedia page for more information.\n\nminimum/maximum real: the range of x-values\n\nminimum/maximum imaginary: the range of y-values\n\n# of iterations: how detailed the fractal is\n\nz real/imaginary: the starting values of z\n\nflip c and z: flips the values of c and z\n\nplot diverging: plots all values of c that diverge instead of converge');
 }
 
 window.onload = async () => {
