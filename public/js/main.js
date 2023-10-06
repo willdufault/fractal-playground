@@ -268,6 +268,34 @@ function generateJulia5() {
 		z_imaginary, flip_c_and_z, plot_diverging);
 }
 
+function generateJulia6() {
+	// Set input values.
+	document.querySelector('#minimum-real').value = -2;
+	document.querySelector('#maximum-real').value = 2;
+	document.querySelector('#minimum-imaginary').value = -1.2;
+	document.querySelector('#maximum-imaginary').value = 1.2;
+	document.querySelector('#iterations').value = 100;
+	document.querySelector('#z-real').value = 0.3;
+	document.querySelector('#z-imaginary').value = -0.02;
+	document.querySelector('#flip-c-and-z').checked = true;
+	document.querySelector('#plot-diverging').checked = false;
+
+	// Store input values.
+	let minimum_real = parseFloat(document.querySelector('#minimum-real').value);
+	let maximum_real = parseFloat(document.querySelector('#maximum-real').value);
+	let minimum_imaginary = parseFloat(document.querySelector('#minimum-imaginary').value);
+	let maximum_imaginary = parseFloat(document.querySelector('#maximum-imaginary').value);
+	let iterations = parseInt(document.querySelector('#iterations').value);
+	let z_real = parseFloat(document.querySelector('#z-real').value);
+	let z_imaginary = parseFloat(document.querySelector('#z-imaginary').value);
+	let flip_c_and_z = document.querySelector('#flip-c-and-z').checked;
+	let plot_diverging = document.querySelector('#plot-diverging').checked
+
+	// Draw the Mandelbrot fractal.
+	draw(minimum_real, maximum_real, minimum_imaginary, maximum_imaginary, iterations, z_real, 
+		z_imaginary, flip_c_and_z, plot_diverging);
+}
+
 function generateWhiteCircle() {
 	// Set input values.
 	document.querySelector('#minimum-real').value = -4;
@@ -341,6 +369,7 @@ window.onload = async () => {
 	document.querySelector('#julia-3-button').addEventListener('click', generateJulia3, false);
 	document.querySelector('#julia-4-button').addEventListener('click', generateJulia4, false);
 	document.querySelector('#julia-5-button').addEventListener('click', generateJulia5, false);
+	document.querySelector('#julia-6-button').addEventListener('click', generateJulia6, false);
 	document.querySelector('#white-circle-button').addEventListener('click', generateWhiteCircle, false);
 	document.querySelector('#black-circle-button').addEventListener('click', generateBlackCircle, false);
 
