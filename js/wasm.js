@@ -21,6 +21,7 @@ let info = {
 
 // Load .wasm file(s).
 export async function loadWasm() {
+	// NOTE: Changed from relative import for GH pages.
 	let response = await fetch('wasm/fractal-set.wasm');
 	let bytes = await response.arrayBuffer();
 	let wasm_object = await WebAssembly.instantiate(bytes, info);
