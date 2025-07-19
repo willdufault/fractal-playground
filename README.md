@@ -9,7 +9,7 @@ calculations to determine whether or not each individual pixel on the screen con
 This was very slow, and trying to generate fractals with high numbers of iterations took a very long 
 time. To solve this, I first looked into using GLSL shaders, but I have never coded anything in GLSL 
 before, and I felt that if I were to use this, I would just have to copy the code. Even though this 
-would have most likely resulted in significantly better performance than the final version here, I 
+would have most likely resulted in better performance than the final version here, I 
 wanted to do it on my own and not just follow a tutorial step-by-step.
 
 So, I instead used web assembly to speed up my application. I wrote a simple C program that did the 
