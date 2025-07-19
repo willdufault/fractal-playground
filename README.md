@@ -4,7 +4,7 @@ I created a tool that allows users to visualize what different fractals look lik
 equation for the Mandelbrot/Julia set, `z = z^2 + c`. 
 
 One big challenge that I faced when creating this application was performance: I first created 
-JavaScript files, which can still be found in the `/static/js` folder, which did all of the 
+JavaScript files, which can still be found in the `/js` folder, which did all of the 
 calculations to determine whether or not each individual pixel on the screen converged or diverged. 
 This was very slow, and trying to generate fractals with high numbers of iterations took a very long 
 time. To solve this, I first looked into using GLSL shaders, but I have never coded anything in GLSL 
