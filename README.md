@@ -1,7 +1,5 @@
 # Fractal Playground
 
----
-
 I created a tool that allows users to visualize what different fractals look like following the 
 equation for the Mandelbrot/Julia set, `z = z^2 + c`. 
 
