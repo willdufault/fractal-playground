@@ -2,8 +2,6 @@
 
 ---
 
-[Glitch (discontinued)](http://a4-william-dufault.glitch.me)
-
 I created a tool that allows users to visualize what different fractals look like following the 
 equation for the Mandelbrot/Julia set, `z = z^2 + c`. 
 
@@ -22,21 +20,3 @@ generation time for fractals with 5000 iterations.
 
 In my instructions on the website, I briefly explain what each option does, but a more detailed 
 explanation of how the belong and draw algorithms work can be found here [here](https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set).
-
----
-
-## Basic Requirements
-
-* Express server 
-	* I created an express server in `server.js`. It is very simple and just serves the static 
-	  folder.
-* Client-side interactive experience
-	* I used a `<canvas>` element to display fractals.
-* User interface
-	* I created a very simple UI using `<input>` elements to allow the user to change the arguments 
-	  to the `belongs()` function in `fractal-set.c`, which I compiled to web assembly 
-	  (`fractal-set.wasm`).
-* Basic documentation
-	* I added an "instructions" button under the "generate fractal" button that shows an alert with
-	  details on how fractals are drawn and what all of the options do.
-
